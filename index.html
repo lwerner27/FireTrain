@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <!-- Google Icons Link -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Firebase Link -->
         <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
         <!-- CSS Link -->
@@ -25,6 +27,11 @@
             </div>
         </nav>
         <div class="container">
+            <div class="row">
+                <div class="col s12 m12">
+                    <h3>Train Schedule</h3>
+                </div>
+            </div>
             <!-- Train Row -->
             <div class="row">
                 <div class="col s12 m12">
@@ -39,20 +46,18 @@
                             </tr>
                         </thead>
                         <tbody id="train-table">
-                            <tr>
-                                <td>Hastings Express</td>
-                                <td>Chicago</td>
-                                <td>24 Hours</td>
-                                <td>3PM</td>
-                                <td>60</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+            <div class="row">
+                <div class="col s12 m12">
+                    <h3>Submit a New Train</h3>
+                </div>
+            </div>
             <!-- Form Row -->
             <div class="row">
-                <form class="col s12">
+                <form class="col s12 m6">
                     <div class="row">
                         <div class="input-field col s12">
                             <input id="train-name" type="text">
@@ -67,14 +72,21 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="train-time" type="text">
-                            <label for="train-time">First Train Time</label>
+                            <input id="train-start" type="text">
+                            <label for="train-start">First Train Time</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <input id="train-freq" type="text">
                             <label for="train-freq">Frequency</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <button class="btn waves-effect waves-light" type="button" name="action" id="submit-button">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
                         </div>
                     </div>
                 </form>

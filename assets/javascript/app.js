@@ -32,16 +32,17 @@ database.ref().on("value", function(snapshot) {
 
   trainsArr = snapshot.val().trains
 
+  trainTable.empty()
+
   for (let i = 0; i < trainsArr.length; i++) {
     let currentTrain = trainsArr[i]
 
     let newTR = $("<tr>")
     let nameData = $("<td>").text(currentTrain.name)
     let destData = $("<td>").text(currentTrain.dest)
-    let startData = $("<td>").text(currentTrain.start)
     let freqData = $("<td>").text(currentTrain.freq)
 
-    newTR.append(nameData, destData, startData, newFreq)
+    newTR.append(nameData, destData, freqData)
     
     trainTable.append(newTR)
     

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fire Train</title>
+        <!-- Jquery Link -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <!-- Firebase Link -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Fire Train Tracker</a>
+            </div>
+        </nav>
+        <div class="container">
+            <!-- Train Row -->
+            <div class="row">
+                <div class="col s12 m12">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Train Name</th>
+                                <th>Destination</th>
+                                <th>Frequency</th>
+                                <th>Est. Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody id="train-table">
+                            <tr>
+                                <td>Hastings Express</td>
+                                <td>Chicago</td>
+                                <td>24 Hours</td>
+                                <td>3PM</td>
+                                <td>60</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Form Row -->
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="train-name" type="text">
+                            <label for="train-name">Train Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="train-dest" type="text">
+                            <label for="train-destination">Destination</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="train-time" type="text">
+                            <label for="train-time">First Train Time</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="train-freq" type="text">
+                            <label for="train-freq">Frequency</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Main Script -->
+        <script src="./assets/javascript/app.js"></script>
+    </body>
+
+</html>

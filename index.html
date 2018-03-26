@@ -8,6 +8,8 @@
         <title>Fire Train</title>
         <!-- Jquery Link -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Moment Link -->
+        <script src="./node_modules/moment/moment.js"></script>
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
         <!-- Compiled and minified JavaScript -->
@@ -21,9 +23,12 @@
     </head>
 
     <body>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo center">Fire Train Tracker</a>
+        <nav class="purple darken-4">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo left">Fire Train Tracker</a>
+                    <a href="#" class="brand-logo right" id="current-time"></a>
+                </div>
             </div>
         </nav>
         <div class="container">

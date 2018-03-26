@@ -1,3 +1,4 @@
+// Firebase Config
 var config = {
     apiKey: "AIzaSyBOoGzSsTAw5WmwuNSVBpzhAEl8TRaopY4",
     authDomain: "firetrain-b1351.firebaseapp.com",
@@ -77,5 +78,11 @@ submitBtn.on("click", function () {
     trains: trainsArr,
 })
 
-
 })
+
+// Updates the time every second
+let time = setInterval( function () {
+  let newTime = moment().format("hh:mm:ss A")
+  $("#current-time").text(newTime).show()
+}, 1000);
+
